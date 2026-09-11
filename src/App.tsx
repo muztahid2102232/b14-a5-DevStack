@@ -1,7 +1,9 @@
+import Nav from "./Components/Nav";
+
 function App() {
   return (
     <>
-      <h1 className="text-5xl">Get started</h1>
+      <Nav/>
     </>
   );
 }
