@@ -1,4 +1,4 @@
-# Name of your project
+# Name of The Project
 
  Dev Stack SPA Project
 
