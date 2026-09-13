@@ -25,9 +25,9 @@
     "category": "Backend",
     "description": "A JavaScript runtime built on Chrome's V8 engine for developing scalable server-side applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
-    "rating": 4.8,
+    "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Standard"
   },
   {
     "id": "express",
@@ -35,7 +35,7 @@
     "category": "Backend",
     "description": "A lightweight and flexible Node.js web framework for building APIs and server-side applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
-    "rating": 4.7,
+    "rating": 4.6,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
   },

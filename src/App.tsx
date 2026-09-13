@@ -2,12 +2,14 @@ import { Suspense } from "react";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
 import Tech from "./Components/Tech";
-import TechList from "./Components/TechList";
+import Technologies from "./Components/technologies/Technologies";
+import type { Itechnology } from "./Types/technology";
+// import Footer from "./Components/Footer";
 
 function App() {
-  const stackDataPromise = async () => {
-    let res = await fetch("/data.json");
-    let data = await res.json();
+  const stackDataPromise = async (): Promise<Itechnology[]> => {
+    const res = await fetch("/data.json");
+    const data = await res.json();
     return data;
   };
   return (
@@ -16,8 +18,9 @@ function App() {
       <Hero />
       <Tech />
       <Suspense fallback={<p>Loading....</p>}>
-        <TechList stackDataPromise={stackDataPromise()}></TechList>
+        <Technologies technologiesPromise={stackDataPromise()}></Technologies>
       </Suspense>
+      {/* <Footer/> */}
     </>
   );
 }
