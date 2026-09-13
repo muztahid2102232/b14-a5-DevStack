@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       {/*// todo for laptop device  */}
-      <nav className="hidden md:flex gap-5 items-center justify-between pt-5 mb-2.5 mx-auto sticky top-0 z-50 bg-white px-23 font-jakarta">
+      <nav className="hidden md:flex gap-5 items-center justify-between pt-5 mb-2.5 sticky top-0 z-50 bg-white px-23 font-jakarta">
         <div>
           <img src={logo} alt="logo-with-text" />
         </div>
