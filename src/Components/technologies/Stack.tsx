@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import type { Itechnology } from "../../Types/technology";
 
 interface StackProps {
@@ -60,7 +61,10 @@ const Stack = ({
               </div>
 
               <button
-                onClick={() => onRemove(technology.id)}
+                onClick={() => {
+                  onRemove(technology.id);
+                  toast.error(`${technology.name} is removed from`);
+                }}
                 className="text-sm font-medium text-red-500 hover:text-red-700"
               >
                 ✕
@@ -70,7 +74,10 @@ const Stack = ({
         )}
       </div>
       <button
-        onClick={onRemoveAll}
+        onClick={() => {
+          onRemoveAll();
+          toast.error("All technologies removed");
+        }}
         disabled={selectedTechnologies.length === 0}
         className="btn btn-error mt-5 w-full"
       >
