@@ -4,7 +4,7 @@ import Nav from "./Components/Nav";
 import Tech from "./Components/Tech";
 import Technologies from "./Components/technologies/Technologies";
 import type { Itechnology } from "./Types/technology";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 
 function App() {
   const stackDataPromise = async (): Promise<Itechnology[]> => {
@@ -20,7 +20,7 @@ function App() {
       <Suspense fallback={<p>Loading....</p>}>
         <Technologies technologiesPromise={stackDataPromise()}></Technologies>
       </Suspense>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }
