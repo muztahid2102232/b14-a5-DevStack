@@ -25,41 +25,63 @@ const Footer = () => {
             className="
               flex gap-2 items-center
               md:flex-row md:gap-4 md:items-start
-              font-semibold text-sm md:text-base font-jakarta
+              font-semibold text-sm md:text-base font-jakarta cursor-pointer
             "
           >
-            <li>Github</li>
+            <li className="">
+              <a href="#">Github</a>
+            </li>
             <span className="md:hidden text-slate-300">•</span>
-            <li>Twitter</li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
             <span className="md:hidden text-slate-300">•</span>
-            <li>Linkedin</li>
+            <li>
+              <a href="#">Linkedin</a>
+            </li>
           </ul>
         </div>
 
         {/* PRODUCT / COMPANY / LEGAL — hidden on mobile, visible on desktop */}
         <div className="hidden md:grid col-span-3">
           <p className="font-bold font-jakarta">PRODUCT</p>
-          <ul className="text-[12px] text-slate-500 space-y-1 font-jakarta">
-            <li>Home</li>
-            <li>Technologies</li>
-            <li>Products</li>
+          <ul className="text-[12px] text-slate-500 space-y-1 font-jakarta cursor-pointer">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Technologies</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
+            </li>
           </ul>
         </div>
 
         <div className="hidden md:grid col-span-3 ">
           <p className="font-bold font-jakarta">COMPANY</p>
-          <ul className="text-[12px] text-slate-500 space-y-1 font-jakarta">
-            <li>About</li>
-            <li>Contact</li>
-            <li>Careers</li>
+          <ul className="text-[12px] text-slate-500 space-y-1 font-jakarta cursor-pointer">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
           </ul>
         </div>
 
         <div className="hidden  md:grid col-span-3">
           <p className="font-bold font-jakarta">LEGAL</p>
-          <ul className="text-[12px] text-slate-500 space-y-1 font-jakarta">
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
+          <ul className="text-[12px] text-slate-500 space-y-1 font-jakarta cursor-pointer">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
           </ul>
         </div>
       </footer>
@@ -78,9 +100,13 @@ const Footer = () => {
         <span className="text-[11px] md:text-[12px]">
           © 2026 Dev Stack. All rights reserved.
         </span>
-        <ul className="flex gap-4 justify-center text-[11px] font-jakarta md:text-[12px] ">
-          <li>privacy</li>
-          <li>Terms</li>
+        <ul className="flex gap-4 justify-center text-[11px] font-jakarta md:text-[12px] cursor-pointer">
+          <li>
+            <a href="#">privacy</a>
+          </li>
+          <li>
+            <a href="#">Terms</a>
+          </li>
         </ul>
       </div>
     </div>
