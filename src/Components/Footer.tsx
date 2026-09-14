@@ -25,7 +25,7 @@ const Footer = () => {
             className="
               flex gap-2 items-center
               md:flex-row md:gap-4 md:items-start
-              font-semibold text-sm md:text-base font-jakarta cursor-pointer
+              font-semibold text-sm md:text-base font-jakarta cursor-pointer text-[#475569]
             "
           >
             <li className="">

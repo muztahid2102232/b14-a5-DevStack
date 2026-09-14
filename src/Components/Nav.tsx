@@ -4,26 +4,26 @@ import hamburger from "../assets/hamburger.png";
 const Nav = () => {
   return (
     <>
-      {/*// todo for laptop device  */}
-      <nav className="hidden md:flex gap-5 items-center justify-between pt-5 mb-2.5 sticky top-0 z-50 bg-white px-23 font-jakarta">
-        <div>
+      {/* // todo for laptop device  */}
+      <nav className="hidden md:flex gap-5 items-center justify-between pt-5 px-23 mb-2.5 sticky top-0 z-50 bg-white  font-jakarta">
+        <div className="cursor-pointer">
           <img src={logo} alt="logo-with-text" />
         </div>
         <div>
           <ul className="flex gap-5 text-[#475569] text-[14px] font-medium list-none">
-            <li className="text-[#DB2777] ">
+            <li className="hover:text-[#DB2777] ">
               <a href="#">Home</a>
             </li>
-            <li>
+            <li className="hover:text-[#DB2777] ">
               <a href="#">Technologies</a>
             </li>
-            <li>
+            <li className="hover:text-[#DB2777] ">
               <a href="#">Projects</a>
             </li>
-            <li>
+            <li className="hover:text-[#DB2777] ">
               <a href="#">About</a>
             </li>
-            <li>
+            <li className="hover:text-[#DB2777] ">
               <a href="#">Contact</a>
             </li>
           </ul>
@@ -39,7 +39,9 @@ const Nav = () => {
 
       <nav className="grid grid-cols-3 items-center justify-center px-4 py-4 sticky top-0 z-50 bg-white md:hidden">
         <div className="justify-self-start">
-          <img src={hamburger} alt="hamburger-icon" />
+          <button>
+            <img src={hamburger} alt="hamburger-icon" />
+          </button>
         </div>
 
         <div className="justify-self-center">

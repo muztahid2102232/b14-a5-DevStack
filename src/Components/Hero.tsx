@@ -27,7 +27,7 @@ const Hero = () => {
             <button className="bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-lg px-4 py-3 text-white text-[14px] font-semibold cursor-pointer font-inter">
               Explore Technologies
             </button>
-            <button className="text-[#374151] px-12 py-3 rounded-lg outline outline-[#E5E7EB] text-[14px] cursor-pointer font-inter">
+            <button className="text-[#374151] px-12 py-3 rounded-lg outline outline-[#E5E7EB] text-[14px] cursor-pointer font-inter hover:bg-[#EC4899]  hover:text-white">
               Learn More
             </button>
           </div>

@@ -13,7 +13,7 @@ function App() {
     return data;
   };
   return (
-    <>
+    <div>
       <Nav />
       <Hero />
       <Tech />
@@ -21,7 +21,7 @@ function App() {
         <Technologies technologiesPromise={stackDataPromise()}></Technologies>
       </Suspense>
       <Footer/>
-    </>
+    </div>
   );
 }
 

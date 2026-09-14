@@ -26,7 +26,7 @@ const Technologies = ({ technologiesPromise }: TechnologyProps) => {
     }
 
     setSelectedIds([...selectedIds, id]);
-    toast.success(`${technology.name} added to your stack.`);
+    toast.success(`${technology.name} is added to the stack.`);
   };
 
   // Remove technology from stack

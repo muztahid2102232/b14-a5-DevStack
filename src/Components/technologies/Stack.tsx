@@ -63,7 +63,7 @@ const Stack = ({
               <button
                 onClick={() => {
                   onRemove(technology.id);
-                  toast.error(`${technology.name} is removed from`);
+                  toast.error(`${technology.name} is removed from the stack`);
                 }}
                 className="text-sm font-medium text-red-500 hover:text-red-700"
               >
@@ -76,7 +76,7 @@ const Stack = ({
       <button
         onClick={() => {
           onRemoveAll();
-          toast.error("All technologies removed");
+          toast.error("All technologies are removed from the stack");
         }}
         disabled={selectedTechnologies.length === 0}
         className="btn btn-error mt-5 w-full"
