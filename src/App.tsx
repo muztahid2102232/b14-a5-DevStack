@@ -1,10 +1,12 @@
-import { Suspense } from "react";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
 import Tech from "./Components/Tech";
-import Technologies from "./Components/technologies/Technologies";
 import type { Itechnology } from "./Types/technology";
 import Footer from "./Components/Footer";
+import { Suspense, lazy } from "react";
+import LoadingSpinner from "./Components/LoadingSpinner";
+
+const Technologies = lazy(() => import("./Components/technologies/Technologies"));
 
 function App() {
   const stackDataPromise = async (): Promise<Itechnology[]> => {
@@ -17,8 +19,8 @@ function App() {
       <Nav />
       <Hero />
       <Tech />
-      <Suspense fallback={<p>Loading....</p>}>
-        <Technologies technologiesPromise={stackDataPromise()}></Technologies>
+      <Suspense fallback={<LoadingSpinner/>}>
+        <Technologies technologiesPromise={stackDataPromise()}/>
       </Suspense>
       <Footer/>
     </div>
